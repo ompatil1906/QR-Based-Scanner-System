@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Select Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Layout</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+  
+  <div class="select-menu">
+    <div class="select">
+      <span>Your Location</span>
+      <i class="fas fa-angle-down"></i>
+    </div>
+    <div class="options-list">
+      <div class="option">100</div>
+      <div class="option">101</div>
+      <div class="option">102</div>
+      <div class="option">103</div>
+      <div class="option">104</div>
+      <div class="option">105</div>
+      <div class="option">106</div>
+      <div class="option">107</div>
+      <div class="option">108</div>
+      <div class="option">108B</div>
+      <div class="option">109</div>
+      <div class="option">109A</div>
+      <div class="option">109B</div>
+      <div class="option">110</div>
+      <div class="option">111</div>
+      <div class="option">112</div>
+      <div class="option">113</div>
+      <div class="option">114</div>
+      <div class="option">116</div>
+      <div class="option">117</div>
+    </div>
+  </div>
+
+
+  <script>
+    const select = document.querySelector(".select");
+    const options_list = document.querySelector(".options-list");
+    const options = document.querySelectorAll(".option");
+
+    //show & hide options list
+    select.addEventListener("click", () => {
+      options_list.classList.toggle("active");
+      select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+    });
+
+    //select option
+    options.forEach((option) => {
+      option.addEventListener("click", () => {
+        options.forEach((option) => {option.classList.remove('selected')});
+        select.querySelector("span").innerHTML = option.innerHTML;
+        option.classList.add("selected");
+        options_list.classList.toggle("active");
+        select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+      });
+    });
+  </script>
+</body>
+</html>
