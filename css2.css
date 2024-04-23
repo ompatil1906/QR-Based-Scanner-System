@@ -1,0 +1,116 @@
+nav {
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    padding: 10px;
+}
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+body {
+background:linear-gradient( to  right,rgb(24, 93, 212),rgb(243, 78, 1));
+background-repeat: no-repeat ;
+Background-attachment:fixed;
+}
+h2 { font-size: medium;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+border: 8px;
+border-radius: 5px;
+border-style: outset;
+padding: 9px;
+color: antiquewhite;
+border-color:rgb(255, 217, 5);
+border-left-style: double;
+border-right-style:double;
+border-left-width:10px;
+border-left-color:rgb(253, 253, 0);
+box-sizing: inherit;
+width: 338x; 
+height: 600px; 
+float: left;
+}
+#class1 {
+   border:5px solid;
+   width: 100px;
+   height:100px;
+   padding:10px;
+   
+   color:red;
+ border-color: rgb(246, 4, 4);
+ margin-top: 50px;
+
+ 
+ top:13%;
+ left: 23%;
+ animation:myslide, mycolorchange;
+ animation-iteration-count:infinite;
+ animation-play-state:running;
+ animation-delay:0s;
+ animation-duration:5s;
+}
+
+#class2{
+    border:5px solid;
+   width: 390px;
+   height:780px;
+   padding:10px;
+   background:linear-gradient( to  LEFT,rgb(65, 214, 15),rgb(243, 78, 1));
+   color:rgba(3, 3, 3, 0.6);
+ border-color: rgb(0, 0, 0);
+ margin-top: 10px;
+ float:right;
+ position: relative;
+ top:7%;
+ margin-right:41%;
+}
+ #class3{
+    border: 5px solid;
+    width: auto;
+    height: auto;
+    font-size: 300px;
+    text-align: center;
+    animation:myslide, mycolorchange;
+ animation-iteration-count:infinite;
+ animation-play-state:running;
+ animation-delay: 5s;
+ animation-duration: 5s;
+ text-shadow: 0px -5px 19px rgb(9, 205, 81), 4px 40px 10px rebeccapurple;
+ transform: skewX(45deg);
+ transform: skewY(30deg);
+ transform: skew(20deg,20deg);
+ 
+ }
+
+@keyframes myslide {from{margin-left:100%;}
+
+to{margin-left: 0%;}
+
+
+}
+@keyframes mycolorchange {
+    20%{background-color:red;}
+    40%{background-color:blue;}
+    60%{background-color:yellow;}
+}
+H1{
+    color: black;
+}
+#p3 {
+    border: 2px solid;
+    border-color: #000000;
+    color: #ddd;
+    width: 56%;
+    position: relative;
+    text-shadow: 1PX 1PX 27PX whitesmoke;
+    
+
+}
