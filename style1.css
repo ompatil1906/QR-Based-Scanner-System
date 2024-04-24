@@ -16,6 +16,10 @@
     text-align: right;
   }
 
+  .column{
+    padding: 5px;
+  }
+
   .navbar li{
     display: inline-block;
   }
@@ -36,9 +40,10 @@
   }
   
   .select-menu{
+    margin: left;
     width: 300px;
     cursor: pointer;
-    padding: 15em;
+    
   }
   
   .select{
