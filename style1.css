@@ -1,0 +1,91 @@
+.logo {
+  height: 80px;
+  width: 350px;
+ margin-right: auto;
+}
+            .container {
+                list-style: none;
+                display: flex;
+                font-size: 25px;
+              }
+  .navbar ul{
+    list-style: none;
+    background: white;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+
+  .navbar li{
+    display: inline-block;
+  }
+
+  .navbar a{
+    text-decoration: none;
+    color: blue;
+    width: 100px;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 14px;
+  }
+
+  .navbar a:hover{
+    background: lightskyblue;
+  }
+  
+  .select-menu{
+    width: 300px;
+    cursor: pointer;
+    padding: 15em;
+  }
+  
+  .select{
+    background-color: #201e1e;
+    padding: 20px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .options-list{
+    position: absolute;
+    width: 260px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-top: 14px;
+    padding: 0 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    transition: .4s linear .2s;
+    height: 0;
+  }
+  
+  .option{
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+  }
+  
+  .option:hover,
+  .option.selected{
+    color: #00a8ff;
+  }
+  
+  .options-list::-webkit-scrollbar{
+    width: 4px;
+    background-color: #eee;
+  }
+  
+  .options-list::-webkit-scrollbar-thumb{
+    background-color: #00a8ff;
+  }
+  
+  .options-list.active{
+    height: 180px;
+  }
