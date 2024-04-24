@@ -1,7 +1,13 @@
-
-  
- 
-
+.logo {
+  height: 80px;
+  width: 350px;
+ margin-right: auto;
+}
+            .container {
+                list-style: none;
+                display: flex;
+                font-size: 25px;
+              }
   .navbar ul{
     list-style: none;
     background: white;
@@ -18,7 +24,6 @@
     text-decoration: none;
     color: blue;
     width: 100px;
-    display: block;
     padding: 25px 20px;
     text-transform: uppercase;
     font-weight: bold;
@@ -33,7 +38,7 @@
   .select-menu{
     width: 300px;
     cursor: pointer;
-    padding: 10em;
+    padding: 15em;
   }
   
   .select{
@@ -49,7 +54,7 @@
   
   .options-list{
     position: absolute;
-    width: 100%;
+    width: 260px;
     background-color: #f9f9f9;
     border-radius: 6px;
     margin-top: 14px;
