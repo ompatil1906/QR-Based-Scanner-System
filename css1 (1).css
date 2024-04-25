@@ -1,12 +1,12 @@
 body {
-    background-color: #000000;
-    font-family: Arial, sans-serif;
+    background-color: white;
+    font-family:'Times New Roman', Times, serif;
     margin: 0;
     padding: 0; 
 }
 
 header {
-    background-color: #000000;
+    background-color:white;
     color: rgb(196, 46, 46);
     padding: 8px;
     text-align: center;
@@ -174,8 +174,9 @@ footer {
     input:checked + .slide-container .nav label { display: block; }
     
     #text {
-        text-shadow:3px 2px 9px rgb(39, 51, 139);
-        color: #1f3493;
+        font-style:;
+        
+        color: #000000;
         float: right;
         padding-right: 42%;
         margin-top: 0%;
@@ -183,16 +184,16 @@ footer {
     
     }
     #layout {
-        width: 1000px;
+        width: 1270px;
         border: 1px solid ;
         border-color:black ;
-        box-shadow:9px 0px 34px rgb(0, 0, 0) ;
+        box-shadow:9px 0px 34px rgb(242, 241, 241) ;
     }
     #p2 {
         font-size: 20px;
         color: #fffefe;
         float: center;
-        width: 56%;
+        width: 65%;
         position: relative;
         
         
@@ -207,4 +208,7 @@ footer {
         text-shadow: 1PX 1PX 27PX whitesmoke;
         
     
+    }
+    table {
+        color: #2e0c0c;
     }
